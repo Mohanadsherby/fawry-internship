@@ -1,0 +1,3 @@
+## A short paragraph: If you were to support regex or -i/-c/-l options, how would your structure change?
+
+If I were to support regex, or add options like -i (ignore case), -c (count matches), and -l (list matching filenames), I would first expand the getopts string to include these flags (e.g., "nvilc"). Then, I would set internal flags for each option and, based on these flags, implement the regex logic inside the search loop, adjusting how lines are matched, counted, or how filenames are printed.
